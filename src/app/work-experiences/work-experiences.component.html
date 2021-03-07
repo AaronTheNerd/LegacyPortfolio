@@ -1,0 +1,14 @@
+<div id="work-experience" class="py-3">
+    <h1>Work Experience</h1>
+    <div *ngFor="let work of works">
+        <hr>
+        <span class="text-success">{{work.company}}:</span> {{work.location}}
+        <span class="text-success float-right">{{work.start_date}} - {{work.end_date}}</span><br>
+        <span class="font-italic">{{work.position}}</span>
+        <ul>
+            <li *ngFor="let description of work.descriptions">
+                {{description}}
+            </li>
+        </ul>
+    </div>
+</div>
