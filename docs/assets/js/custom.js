@@ -1,3 +1,4 @@
+// Written by Aaron Barge
 $(function() {
     $("#projects-carousel").on('slide.bs.carousel', function(e) {
         var id = $(e.relatedTarget).index();
