@@ -1,5 +1,8 @@
 <section class="container-fluid py-3" *ngFor="let proj of project_list">
-    <h3>{{proj.title}} <a role="button" class="btn btn-success" href="{{proj.src_link}}">SRC</a></h3>
+    <h3>
+        {{proj.title}} 
+        <a *ngIf="proj.src_link"role="button" class="btn btn-success" href="{{proj.src_link}}">SRC</a>
+    </h3>
     <hr>
     <ng-template *ngIf="proj.side_video.source then side; else noSide"></ng-template>
     <ng-template #side>
