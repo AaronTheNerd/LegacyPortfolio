@@ -2,15 +2,11 @@
     <h1>About Me</h1>
     <hr>
     <h2>My name is <span class="text-success">Aaron Barge</span></h2>
-    I'm a Computer Engineering Undergrad @ UofSC<br>
-    I've made this website to act as a virtual portfolio which has my education, work, and project
-    experiences within it. Additionally, This website was written entirely by hand, with only the
-    use of HTML, CSS, and vanilla Javascript. The source code can be found Github.<br>
-    <a role="button" class="btn btn-success" href="#">SRC</a><br>
-    If any project has an SRC link, it'll go to that project's source code. I would also like to
-    mention that I am in no way a web designer. In fact, I've never taken a web design course. I
-    just wanted to challenge myself with creating a "good-looking" webiste with no help from
-    programs designed to stream-line that process.
+    I'm a Computer Engineering Undergrad @ <span class="text-success">UofSC</span><br>
+    <p class="mb-0" [innerHtml]="highlight()">
+    </p>
+    <a role="button" class="my-3 btn btn-success" href="https://github.com/AaronTheNerd/Portfolio">SRC</a><br>
+    <h4 class="text-success">I hope you enjoy your stay!</h4>
 </div>
 <div class="py-3">
     <h2>Skills</h2>
@@ -30,7 +26,7 @@
 <div class="py-3">
     <h2>Contact Me</h2>
     <hr>
-    Email: bargeaaron@gmail.com<br>
-    Github: AaronTheNerd<br>
-    Phone Number: (513) 226 - 1859
+    <span class="text-success">Email:</span> bargeaaron@gmail.com<br>
+    <span class="text-success">Github:</span> AaronTheNerd<br>
+    <span class="text-success">Phone Number:</span> (513) 226 - 1859
 </div>

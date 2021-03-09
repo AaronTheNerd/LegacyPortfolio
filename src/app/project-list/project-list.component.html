@@ -13,7 +13,7 @@
                 </ng-template>
                 <span class="text-success">Date:</span> {{proj.date}}<br>
                 <span class="text-success">Languges:</span> {{proj.language}}<br>
-                <span class="text-success">Description:</span> {{proj.description}}
+                <span class="text-success">Description: </span><span [innerHtml]=highlighttext(proj.description)></span>
             </div>
             <div class='col-sm-3'>
                 <video width='100%' class="rounded" autoplay loop muted>
@@ -28,7 +28,7 @@
         </ng-template>
         <span class="text-success">Date:</span> {{proj.date}}<br>
         <span class="text-success">Languges:</span> {{proj.language}}<br>
-        <span class="text-success">Description:</span> {{proj.description}}
+        <span class="text-success">Description: </span><span [innerHtml]=highlighttext(proj.description)></span>
     </ng-template>
     <video *ngFor="let vid of proj.videos" class="rounded pt-2" width="100%" autoplay loop muted>
         <source type="{{vid.type}}" src="{{vid.source}}">

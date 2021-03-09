@@ -7,7 +7,7 @@
         <span class="font-italic">{{work.position}}</span>
         <ul>
             <li *ngFor="let description of work.descriptions">
-                {{description}}
+                <p [innerHtml]="highlighttext(description)"></p>
             </li>
         </ul>
     </div>
