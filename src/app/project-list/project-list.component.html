@@ -16,7 +16,7 @@
                 <span class="text-success">Description: </span><span [innerHtml]=highlighttext(proj.description)></span>
             </div>
             <div class='col-sm-3'>
-                <video width='100%' class="rounded" autoplay loop muted>
+                <video width='100%' class="rounded" controls autoplay loop muted>
                     <source type="{{proj.side_video.type}}" src="{{proj.side_video.source}}">
                 </video>
             </div>
@@ -30,7 +30,7 @@
         <span class="text-success">Languges:</span> {{proj.language}}<br>
         <span class="text-success">Description: </span><span [innerHtml]=highlighttext(proj.description)></span>
     </ng-template>
-    <video *ngFor="let vid of proj.videos" class="rounded pt-2" width="100%" autoplay loop muted>
+    <video *ngFor="let vid of proj.videos" class="rounded pt-2" width="100%" controls autoplay loop muted>
         <source type="{{vid.type}}" src="{{vid.source}}">
     </video>
     <img *ngFor="let img of proj.images" class="rounded pt-2" src="{{img.source}}" alt="{{img.alt}}" width="100%">
