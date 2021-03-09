@@ -4,7 +4,7 @@ sudo ng build --prod=true --outputPath=docs --baseHref=/Portfolio/
 
 sudo cp docs/index.html docs/404.html
 
-git add .
+git add --all
 
 git commit -m "generated deployment"
 
