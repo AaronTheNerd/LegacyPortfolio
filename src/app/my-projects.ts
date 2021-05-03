@@ -2,6 +2,25 @@ import { Project } from './project';
 
 export const PERSONAL_PROJECTS: Project[] = [
     {
+        title: 'Dynamic Background',
+        course: '',
+        date: 'May 2021',
+        language: 'Python',
+        src_link: 'https://github.com/AaronTheNerd/Personal-Coding-Projects/tree/master/Python/DynamicBackground',
+        description: 'Implemented Delaunay Triangulation on a grid of points in order to create seamless gifs to use as a moving background. In order to create the background I first needed to generate a random series of points which are separated by some distance (this is so there cannot be any overlapping points). Then I needed to move the points in such a way that their movement appears random but also ends in the same place as it started. I used 4-dimensional OpenSimplex noise where two out of the four components move in a circle so that the other two can define the x and y offset of the point. This ensures that the points move smoothly, randomly, and always end in the same place as it began. Then at each frame of the gif, Delaunay Triangulation is performed to turn the series of points into a triangular mesh. Finally, I color the triangles based on a predefined color gradient. Currently I have defined a linear continuous HSV gradient, a linear discrete HSV gradient with a set number of colors, and an exponential continuous HSV gradient. The gif shown used an exponential HSV gradient with an alpha value of -1.8.',
+        images: [
+            {
+                source: 'assets/gif5.gif',
+                alt: 'Dynamic Background Gif'
+            },
+        ],
+        side_video: {
+            source: '',
+            type: ''
+        },
+        videos: []
+    },
+    {
         title: 'Programmable Christmas Tree',
         course: '',
         date: 'December 2020',
