@@ -1,7 +1,7 @@
 <section class="container-fluid py-3" *ngFor="let proj of project_list">
     <h3>
         {{proj.title}} 
-        <a *ngIf="proj.src_link"role="button" class="btn btn-success" href="{{proj.src_link}}">SRC</a>
+        <a *ngIf="proj.src_link" role="button" class="btn btn-success" href="{{proj.src_link}}">SRC</a>
     </h3>
     <hr>
     <ng-template *ngIf="proj.side_video.source then side; else noSide"></ng-template>
@@ -13,7 +13,8 @@
                 </ng-template>
                 <span class="text-success">Date:</span> {{proj.date}}<br>
                 <span class="text-success">Languges:</span> {{proj.language}}<br>
-                <span class="text-success">Description: </span><span [innerHtml]=highlighttext(proj.description)></span>
+                <span class="text-success">Description: </span>
+                <span [innerHtml]=highlighttext(proj.description)></span>
             </div>
             <div class='col-sm-3'>
                 <video width='100%' class="rounded" controls autoplay loop muted>
@@ -28,7 +29,8 @@
         </ng-template>
         <span class="text-success">Date:</span> {{proj.date}}<br>
         <span class="text-success">Languges:</span> {{proj.language}}<br>
-        <span class="text-success">Description: </span><span [innerHtml]=highlighttext(proj.description)></span>
+        <span class="text-success">Description: </span>
+        <span [innerHtml]=highlighttext(proj.description)></span>
     </ng-template>
     <video *ngFor="let vid of proj.videos" class="rounded pt-2" width="100%" controls autoplay loop muted>
         <source type="{{vid.type}}" src="{{vid.source}}">
