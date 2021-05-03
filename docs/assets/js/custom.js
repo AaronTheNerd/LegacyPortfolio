@@ -5,4 +5,7 @@ $(function() {
         $('#indicators > li > a.active').removeClass('active');
         $('#indicators > li > a[data-slide-to=' + id + ']').addClass('active');
     });
+    $('#dropdowns > a').on("click", function() {
+        $.scrollTo($('#projects'));
+     });
 });
