@@ -246,7 +246,7 @@ export const OPTIONAL_PROJECTS: Project[] = [
     },
     {
         course: 'STAT 509 - Statistics for Engineers',
-        title: 'Runtime Optimization of MergeSort',
+        title: 'Runtime Optimization of MergeSort via Multithreading',
         date: 'December 2019',
         language: 'C++',
         src_link: 'https://github.com/AaronTheNerd/Personal-Coding-Projects/tree/master/C++/MergeSort',
