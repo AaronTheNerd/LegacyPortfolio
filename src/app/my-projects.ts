@@ -228,20 +228,6 @@ export const REQUIRED_PROJECTS: Project[] = [
         images: [],
         videos: []
     },
-    {
-        course: 'STAT 509 - Statistics for Engineers',
-        title: 'Runtime Optimization of MergeSort',
-        date: 'December 2019',
-        language: 'C++',
-        src_link: '',
-        description: 'Created a program which implemented MergeSort on a list and used threads to reduce the runtime. In order to make this an experiment for a statistics course, I varied the amount of threads and averaged the times in microseconds after a few thousand tests.',
-        side_video: {
-            source: '',
-            type: '',
-        },
-        images: [],
-        videos: []
-    },
 ];
 export const OPTIONAL_PROJECTS: Project[] = [
     {
@@ -251,6 +237,20 @@ export const OPTIONAL_PROJECTS: Project[] = [
         language: 'Java',
         src_link: 'https://github.com/AaronTheNerd/csce416ec',
         description: 'Created an implementation of a TCP connection by creating wrapper functions from an existing UDP connection. The TCP connection implemented congestion avoidance and reliable data transfer.',
+        side_video: {
+            source: '',
+            type: '',
+        },
+        images: [],
+        videos: []
+    },
+    {
+        course: 'STAT 509 - Statistics for Engineers',
+        title: 'Runtime Optimization of MergeSort',
+        date: 'December 2019',
+        language: 'C++',
+        src_link: 'https://github.com/AaronTheNerd/Personal-Coding-Projects/tree/master/C++/MergeSort',
+        description: 'Created a program which implemented MergeSort on a list and used threads to reduce the runtime. In order to make this an experiment for a statistics course, I varied the amount of threads and averaged the times in microseconds after a few thousand tests.',
         side_video: {
             source: '',
             type: '',
