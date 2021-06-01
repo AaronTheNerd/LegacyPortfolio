@@ -6,6 +6,14 @@ export const COURSES: Course[] = [
         description: 'Design techniques for logic systems; emphasis on higher-level CAD tools such as hardware description languages and functional modeling.'
     },
     {
+        title: 'Compiler Construction',
+        description: 'Techniques for design and implementation of compilers, including lexical analysis, parsing, syntax-directed translation, and symbol table management.'
+    },
+    {
+        title: 'Nonlinear Optimization',
+        description: 'Descent methods, conjugate direction methods, and Quasi-Newton algorithms for unconstrained optimization; globally convergent hybrid algorithm; primal, penalty, and barrier methods for constrained optimization. Computer implementation of algorithms.'
+    },
+    {
         title: 'Computer Systems Engineering',
         description: 'System-level modeling and evaluation of computer systems: requirements elicitation and specification, architectural design, reliability and performance evaluation, Markov modeling, life-cycle cost analysis, project management.'
     },
