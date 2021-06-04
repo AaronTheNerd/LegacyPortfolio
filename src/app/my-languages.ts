@@ -2,28 +2,28 @@ import { Language } from './language';
 
 export const LANGUAGES: Language[] = [
     {
-        language: 'C/C++',
-        skill: 'Proficient'
-    },
-    {
-        language: 'Java',
-        skill: 'Proficient'
-    },
-    {
         language: 'Python',
-        skill: 'Proficient'
+        skill: 'Expert - 88th Percentile'
     },
     {
         language: 'Javascript',
-        skill: 'Adept'
+        skill: 'Expert - 83rd Percentile'
+    },
+    {
+        language: 'C/C++',
+        skill: 'Proficient - 70th Percentile'
+    },
+    {
+        language: 'Java',
+        skill: 'Proficient - 68th Percentile'
     },
     {
         language: 'Matlab',
-        skill: 'Adept'
+        skill: 'Proficient'
     },
     {
         language: 'Prolog',
-        skill: 'Novice'
+        skill: 'Beginner'
     },
     {
         language: 'Haskell',
