@@ -125,7 +125,7 @@ export const REQUIRED_PROJECTS: Project[] = [
         title: 'RISC-V CPU',
         date: 'December 2020',
         language: 'Verilog',
-        src_link: '',
+        src_link: 'https://github.com/AaronTheNerd/CSCE611/tree/master/lab_jb',
         description: 'Designed and implemented a RISC-V CPU using SystemVerilog. This CPU implemented R-, I-, U-, J-, B-, and L-type commands. This CPU was run on a virtual DE2-115 board and needed two additional csrrw commands; one to read from the switches and another to write to the 7-segment displays. Once the CPU was finished it was used to run a program which would use a binary searching algorithm to find the square root of a number taken from the switches and display the approximated square root on the 7-segment displays. This algorithm used unsigned  fixed-point arithmetic with 18 bits of whole number digits and 14 bits of decimal place digits.',
         side_video: {
             source: '',
