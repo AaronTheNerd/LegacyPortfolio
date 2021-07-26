@@ -27,7 +27,7 @@ export const PERSONAL_PROJECTS: Project[] = [
         date: 'November 2020 - July 2021',
         language: 'C++',
         src_link: 'https://github.com/AaronTheNerd/Projects/tree/master/uInteger',
-        technology: 'C++\'s STL',
+        technology: 'Performance Testing, Unit Testing, Optimization',
         description: 'Implementation of an arbitrary precision unsigned integer. This project is a direct improvement of the ‘High Precision Integer’ project. In this project I represent an integer as an std::vector&#60;bool> to allow for dynamic allocation of bits. Despite this project only needing a few changes to work, I made a large variety of changes to this project to make it much more sophisticated. First, I created a suite of unit tests to ensure that my code was robust. Next, I conducted performance evaluations of the code to see where changes needed to be made. Then I researched methods of optimizing my code. This research made me aware of faster methods of performing arithmetic than the traditional ‘grade school’ approach. For example, I began to use the Karatsuba algorithm for multiplying numbers larger than 640 bits. Once that was done my program could calculate the 500,000th term of the Fibonacci sequence in around an hour. Note that this number required 347,120 bits to represent and is approximately equal to 2.96 x 10^104,493.',
         side_video: {
             source: '',
@@ -42,7 +42,7 @@ export const PERSONAL_PROJECTS: Project[] = [
         date: 'November 2020 - December 2020',
         language: 'Python / Arduino',
         src_link: 'https://github.com/AaronTheNerd/Personal-Coding-Projects/tree/master/Arduino/Tree',
-        technology: 'Serial I/O, information encoding/decoding',
+        technology: 'Serial I/O, Information Encoding/Decoding',
         description: 'This project had some interesting challenges. First, the only hardware I had available was an Arduino Pro Mini, whose memory was much smaller than the size of an animation. Second, I couldn’t just move the animation to a separate file and let the Arduino read from that file because I did not have an SD card integrated into the Arduino and Arduinos cannot access files from computers. To solve these problems the project consists of three separate pieces of code. First, a method of creating an animation for the lights of a Christmas tree. Second, once the animation had been made and compiled to custom byte code, code needed to be made to communicate between my machine and the Arduino through the serial port. Finally, code needed to be created on the Arduino to receive the data from the serial port, show the data on the lights, and request more data from the animation. ',
         images: [],
         side_video: {
@@ -57,7 +57,7 @@ export const PERSONAL_PROJECTS: Project[] = [
         date: 'December 2019',
         language: 'C++',
         src_link: 'https://github.com/AaronTheNerd/Projects/tree/master/BigInteger',
-        technology: 'C++\'s STL',
+        technology: '',
         description: 'Implementation of an unsigned integer class with with 1024 bits or 308 decimal digits of precision. This method allowed for the decimal printing of these numbers and utilized bitwise arithmetic for all of the integer manipulation.',
         side_video: {
             source: '',
@@ -72,7 +72,7 @@ export const PERSONAL_PROJECTS: Project[] = [
         date: 'March 2020',
         language: 'Python',
         src_link: 'https://github.com/AaronTheNerd/Personal-Coding-Projects/tree/master/Python/IMDb%20Webscraper',
-        technology: 'Pandas, BeutifulSoup, Selenium',
+        technology: 'Webscraping, Pandas, BeutifulSoup, Selenium',
         description: 'Created a webscraper using selenium, BeautifulSoup, and pandas to pull the top 250 movies off of IMBd. Once all of the movies had been saved to lists, the lists gets exported to an excel spreadsheet. Additionally, I designed a secondary program which would index into the spreadsheet and print the information of the movie.',
         side_video: {
             source: '',
@@ -96,7 +96,7 @@ export const PERSONAL_PROJECTS: Project[] = [
         date: 'September 2019',
         language: 'C++',
         src_link: 'https://github.com/AaronTheNerd/Projects/tree/master/Trees',
-        technology: 'C++\'s STL',
+        technology: '',
         description: 'Implemented BST both as doubly-linked and singly-linked. Additionally, created a tree to implement Huffman encoding.',
         side_video: {
             source: '',
@@ -133,7 +133,7 @@ export const REQUIRED_PROJECTS: Project[] = [
         date: 'October 2020 - December 2020',
         language: 'Verilog',
         src_link: 'https://github.com/AaronTheNerd/CSCE611/tree/master/lab_jb',
-        technology: 'Information decoding',
+        technology: 'Assembly Programming, Unit Testing, End-to-End Testing',
         description: 'Designed and implemented a RISC-V CPU using SystemVerilog. This CPU implemented R-, I-, U-, J-, B-, and L-type commands. This CPU was run on a virtual DE2-115 board and needed two additional csrrw commands; one to read from the switches and another to write to the 7-segment displays. Once the CPU was finished it was used to run a program which would use a binary searching algorithm to find the square root of a number taken from the switches and display the approximated square root on the 7-segment displays. This algorithm used unsigned  fixed-point arithmetic with 18 bits of whole number digits and 14 bits of decimal place digits.',
         side_video: {
             source: '',
@@ -168,8 +168,8 @@ export const REQUIRED_PROJECTS: Project[] = [
         date: 'October 2019 - December 2019',
         language: 'Python',
         src_link: 'https://github.com/AaronTheNerd/csce274_project1',
-        technology: 'Raspberry Pi, Serial I/O, Multithreading, Sensors',
-        description: 'Created an interface to control a Roomba. This interface allowed the Roomba to change modes, parse button inputs, parse bumpers, parse wheel drops, parse cliff sensors, parse light bumpers, drive straight, turn, and rotate. We used this interface to: (1) Implement a random-walk method which could detect bumping into the wall and stop before rolling off of a cliff. (2) Additionally, we added a closed-loop PD controller which allowed the Roomba to accurately and smoothly follow a wall. (3) Finally, we added more functionality to the previous bullet-point which allowed the Roomba to detect a charging station and park itself.',
+        technology: 'Raspberry Pi, Serial I/O, Multithreading, Sensors, Closed-Loop Controller',
+        description: 'Created an interface to control a Roomba. This interface allowed the Roomba to change modes, parse button inputs, parse bumpers, parse wheel drops, parse cliff sensors, parse light bumpers, drive straight, turn, and rotate. We used this interface to: <ul> <li>Implement a random-walk method which could detect bumping into the wall and stop before rolling off of a cliff.</li> <li>Additionally, we added a closed-loop PD controller which allowed the Roomba to accurately and smoothly follow a wall.</li> <li>Finally, we added more functionality to the previous bullet-point which allowed the Roomba to detect a charging station and park itself.</li></ul>',
         side_video: {
             source: 'assets/roomba.mov',
             type: 'video/mp4',
@@ -203,7 +203,7 @@ export const REQUIRED_PROJECTS: Project[] = [
         date: 'April 2019',
         language: 'C++',
         src_link: 'https://github.com/csce350-spring19/program-5-AaronTheNerd/tree/master/src',
-        technology: 'C++\'s STL',
+        technology: '',
         description: 'Implemented dynamic programming solutions for the coin-row problem and the robot-coin problem. These solutions were able to return the correct values and other methods were made to backtrack through the solution to give the specific moves which led to the solution.',
         side_video: {
             source: '',
@@ -265,7 +265,7 @@ export const OPTIONAL_PROJECTS: Project[] = [
         date: 'November 2019 - December 2019',
         language: 'C++',
         src_link: 'https://github.com/AaronTheNerd/Personal-Coding-Projects/tree/master/C++/MergeSort',
-        technology: 'C++\s STL, Multithreading, Runtime Analysis',
+        technology: 'Multithreading, Performance Analysis',
         description: 'Created a program which implemented MergeSort on a list and used threads to reduce the runtime. In order to make this an experiment for a statistics course, I varied the amount of threads and averaged the times in microseconds after a few thousand tests.',
         side_video: {
             source: '',
