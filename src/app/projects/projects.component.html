@@ -30,21 +30,15 @@
             </a>
         </li>
     </ul>
-    <div id="projects-carousel" class="carousel slide bg-white" data-ride="carousel" data-interval="false">
+    <div id="projects-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
         <div class="carousel-inner">
             <div id="personal"class="carousel-item active p-3">
-                <h2>Personal Projects</h2>
-                <hr>
                 <app-project-list [project_list]=personal_projects></app-project-list>
             </div>
             <div id="required" class="carousel-item p-3">
-                <h2>Required School Projects</h2>
-                <hr>
                 <app-project-list [project_list]=required_projects></app-project-list>
             </div>
             <div id="optional" class="carousel-item p-3">
-                <h2>Optional School Projects</h2>
-                <hr>
                 <app-project-list [project_list]=optional_projects></app-project-list>
             </div>
         </div>

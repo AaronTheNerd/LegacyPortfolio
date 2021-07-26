@@ -6,6 +6,7 @@ export interface Project {
     date: string;
     language: string;
     src_link: string;
+    technology: string;
     description: string;
     side_video: Video;
     images: Image[];
