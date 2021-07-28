@@ -41,7 +41,7 @@ export const PERSONAL_PROJECTS: Project[] = [
         course: '',
         date: 'November 2020 - December 2020',
         language: 'Python / Arduino',
-        src_link: 'https://github.com/AaronTheNerd/Personal-Coding-Projects/tree/master/Arduino/Tree',
+        src_link: 'https://github.com/AaronTheNerd/Personal-Coding-Projects/tree/master/Arduino/AnimatedChristmasTree',
         technology: 'Serial I/O, Information Encoding/Decoding',
         description: 'This project had some interesting challenges. First, the only hardware I had available was an Arduino Pro Mini, whose memory was much smaller than the size of an animation. Second, I couldn’t just move the animation to a separate file and let the Arduino read from that file because I did not have an SD card integrated into the Arduino and Arduinos cannot access files from computers. To solve these problems the project consists of three separate pieces of code. First, a method of creating an animation for the lights of a Christmas tree. Second, once the animation had been made and compiled to custom byte code, code needed to be made to communicate between my machine and the Arduino through the serial port. Finally, code needed to be created on the Arduino to receive the data from the serial port, show the data on the lights, and request more data from the animation. ',
         images: [],
@@ -56,7 +56,7 @@ export const PERSONAL_PROJECTS: Project[] = [
         course: '',
         date: 'December 2019',
         language: 'C++',
-        src_link: 'https://github.com/AaronTheNerd/Projects/tree/master/BigInteger',
+        src_link: 'https://github.com/AaronTheNerd/BigInteger',
         technology: '',
         description: 'Implementation of an unsigned integer class with with 1024 bits or 308 decimal digits of precision. This method allowed for the decimal printing of these numbers and utilized bitwise arithmetic for all of the integer manipulation.',
         side_video: {
@@ -95,7 +95,7 @@ export const PERSONAL_PROJECTS: Project[] = [
         course: '',
         date: 'September 2019',
         language: 'C++',
-        src_link: 'https://github.com/AaronTheNerd/Projects/tree/master/Trees',
+        src_link: 'https://github.com/AaronTheNerd/Trees',
         technology: '',
         description: 'Implemented BST both as doubly-linked and singly-linked. Additionally, created a tree to implement Huffman encoding.',
         side_video: {
