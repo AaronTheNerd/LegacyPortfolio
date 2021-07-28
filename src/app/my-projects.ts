@@ -6,7 +6,7 @@ export const PERSONAL_PROJECTS: Project[] = [
         course: '',
         date: 'May 2021 - July 2021',
         language: 'Python',
-        src_link: 'https://github.com/AaronTheNerd/Personal-Coding-Projects/tree/master/Python/DynamicBackground',
+        src_link: 'https://github.com/AaronTheNerd/DynamicBackgrounds',
         technology: 'OpenSimplex, PIL, ImageMagick',
         description: 'Designed a program which uses Delaunay Triangulation to create seamless, looping gifs. In order to move the points, I used 4-dimensional OpenSimplex noise where two out of the four components are the starting x- and y-position of the point and the other two move in a circle. This means that each point will move uniquely to each other and will always end where they started. On top of this, I added an additional type of point which can ‘drift’ i.e. some points will always move through an entire screen distance before the gif loops. This allows for more varied motion between the points. To finalize the program I designed many different ways to color the triangles, from a simple gradient, or a tie dye swirl, or a facing ratio based shader. These different ways of coloring the triangles allows for a large amount of customization all while being controlled by modifying a single json file. Below is one of my favorites; a facing ratio shader on top of an HSV gradient, where all of the points drift one screen width to the right and one screen height down.',
         images: [
@@ -26,7 +26,7 @@ export const PERSONAL_PROJECTS: Project[] = [
         course: '',
         date: 'November 2020 - July 2021',
         language: 'C++',
-        src_link: 'https://github.com/AaronTheNerd/Projects/tree/master/uInteger',
+        src_link: 'https://github.com/AaronTheNerd/uInteger',
         technology: 'Performance Testing, Unit Testing, Optimization',
         description: 'Implementation of an arbitrary precision unsigned integer. This project is a direct improvement of the ‘High Precision Integer’ project. In this project I represent an integer as an std::vector&#60;bool> to allow for dynamic allocation of bits. Despite this project only needing a few changes to work, I made a large variety of changes to this project to make it much more sophisticated. First, I created a suite of unit tests to ensure that my code was robust. Next, I conducted performance evaluations of the code to see where changes needed to be made. Then I researched methods of optimizing my code. This research made me aware of faster methods of performing arithmetic than the traditional ‘grade school’ approach. For example, I began to use the Karatsuba algorithm for multiplying numbers larger than 640 bits. Once that was done my program could calculate the 500,000th term of the Fibonacci sequence in around an hour. Note that this number required 347,120 bits to represent and is approximately equal to 2.96 x 10^104,493.',
         side_video: {
