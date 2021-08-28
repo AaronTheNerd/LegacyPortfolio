@@ -2,6 +2,26 @@ import { Project } from './project';
 
 export const PERSONAL_PROJECTS: Project[] = [
     {
+        title: 'Sorting Algorithm Visualizer',
+        course: '',
+        date: 'August 2021',
+        language: 'C++',
+        src_link: 'https://github.com/AaronTheNerd/SortingAlgorithmVisualizer',
+        technology: 'GTK, Multithreading',
+        description: 'A simple sorting algorithm visualizer in C++. This project utilizes the GTK C++ interface `gtkmm` to display a visualization of sorting algorithms. This project consists of two threads, one which sorts the list and another which displays the current state of the list. The latter thread will wait for the former thread to draw the current state of the list before continuing, thus enforcing a specific framerate for the visualizer. Currently, the following sorts are implemented: <ul><li>Bubble Sort</li><li>Cocktail Shaker Sort</li><li>Selection Sort</li><li>Merge Sort</li><li>Insertion Sort</li><li>Quick Sort</li><li>Shell Sort</li></ul>Additionally, the visualizer shows which indicies are currently being compared/swapped by giving them a specific color. Also, the visualizer shows some statistics for the current algorithm i.e. the size of the list being sorted, the number of comparisons, and the number of swaps.',
+        images: [],
+        side_video: {
+            source: '',
+            type: ''
+        },
+        videos: [
+            {
+                source: 'assets/sorter.m4v',
+                type: 'video/mp4'
+            }
+        ]
+    },
+    {
         title: 'Seamless Triangular Gif Generator',
         course: '',
         date: 'May 2021 - July 2021',
@@ -28,7 +48,7 @@ export const PERSONAL_PROJECTS: Project[] = [
         language: 'C++',
         src_link: 'https://github.com/AaronTheNerd/uInteger',
         technology: 'Performance Testing, Unit Testing, Optimization',
-        description: 'Implementation of an arbitrary precision unsigned integer. This project is a direct improvement of the ‘High Precision Integer’ project. In this project I represent an integer as an std::vector&#60;bool> to allow for dynamic allocation of bits. Despite this project only needing a few changes to work, I made a large variety of changes to this project to make it much more sophisticated. First, I created a suite of unit tests to ensure that my code was robust. Next, I conducted performance evaluations of the code to see where changes needed to be made. Then I researched methods of optimizing my code. This research made me aware of faster methods of performing arithmetic than the traditional ‘grade school’ approach. For example, I began to use the Karatsuba algorithm for multiplying numbers larger than 640 bits. Once that was done my program could calculate the 500,000th term of the Fibonacci sequence in around an hour. Note that this number required 347,120 bits to represent and is approximately equal to 2.96 x 10^104,493.',
+        description: 'Implementation of an arbitrary precision unsigned integer. This project is a direct improvement of the ‘High Precision Integer’ project. In this project I represent an integer as an std::vector&#60;bool> to allow for dynamic allocation of bits. Despite this project only needing a few changes to work, I made a large variety of changes to this project to make it much more sophisticated. First, I created a suite of unit tests to ensure that my code was robust. Next, I conducted performance evaluations of the code to see where changes needed to be made. Then I researched methods of optimizing my code. This research made me aware of faster methods of performing arithmetic than the traditional ‘grade school’ approach. For example, I began to use the Karatsuba algorithm for multiplying numbers larger than 640 bits. Once that was done my program could calculate the 500,000th term of the Fibonacci sequence in around an hour. Note that this number required 347,120 bits to represent and is approximately equal to 2.96 x 10<sup>104,493</sup>.',
         side_video: {
             source: '',
             type: ''
