@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     BrowserModule,
     FormsModule,
     NoopAnimationsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
