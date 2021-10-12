@@ -16,8 +16,8 @@
                         <span class="text-success">Course:</span> {{proj.course}}<br>
                     </ng-template>
                     <span class="text-success">Date:</span> {{proj.date}}<br>
-                    <ng-template [ngIf]="proj.technology">
-                        <span class="text-success">Technology Used:</span> {{proj.technology}}<br>
+                    <ng-template [ngIf]="proj.keywords">
+                        <span class="text-success">Keywords:</span> {{proj.keywords}}<br>
                     </ng-template>
                     <span class="text-success">Description: </span>
                     <span [innerHtml]=highlighttext(proj.description)></span>
@@ -34,8 +34,8 @@
                 <span class="text-success">Course:</span> {{proj.course}}<br>
             </ng-template>
             <span class="text-success">Date:</span> {{proj.date}}<br>
-            <ng-template [ngIf]="proj.technology">
-                <span class="text-success">Technology Used:</span> {{proj.technology}}<br>
+            <ng-template [ngIf]="proj.keywords">
+                <span class="text-success">Keywords:</span> {{proj.keywords}}<br>
             </ng-template>
             <span class="text-success">Description: </span>
             <span [innerHtml]=highlighttext(proj.description)></span>
