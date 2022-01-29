@@ -18,6 +18,5 @@ export class ProjectListComponent implements OnInit {
   }
   send_event(project: Project): void {
     window['gtag']('event', project.title);
-    console.log(project.title);
   }
 }

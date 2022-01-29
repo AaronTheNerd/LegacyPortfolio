@@ -5,7 +5,10 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YND0MJ34Y1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag(){
+                dataLayer.push(arguments);
+                console.log("gtag");
+            }
             gtag('js', new Date());
             gtag('config', 'G-YND0MJ34Y1');
         </script>
