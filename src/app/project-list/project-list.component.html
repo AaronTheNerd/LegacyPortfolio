@@ -1,6 +1,6 @@
 <mat-accordion class="bg-light">
     <mat-expansion-panel class="bg-light"*ngFor="let proj of project_list">
-        <mat-expansion-panel-header class="pt-2">
+        <mat-expansion-panel-header class="pt-2" ng-click="gtag('event', 'proj.title');">
             <mat-panel-title>
                 <h3>
                     {{proj.title}} (<span class="text-success">{{proj.language}}</span>)
