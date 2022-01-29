@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Project } from 'src/app/project'
 import { highlight } from '../highlight'
+
+
 @Component({
   selector: 'app-project-list',
   templateUrl: './project-list.component.html',
@@ -14,5 +16,8 @@ export class ProjectListComponent implements OnInit {
   }
   ngOnInit(): void {
   }
-
+  send_event(project: Project): void {
+    window['gtag']('event', project.title);
+    console.log(project.title);
+  }
 }
