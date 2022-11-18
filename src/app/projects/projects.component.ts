@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PERSONAL_PROJECTS, REQUIRED_PROJECTS, OPTIONAL_PROJECTS } from '../my-projects';
+import { PERSONAL_PROJECTS, REQUIRED_PROJECTS } from '../my-projects';
 
 @Component({
   selector: 'app-projects',
@@ -9,7 +9,6 @@ import { PERSONAL_PROJECTS, REQUIRED_PROJECTS, OPTIONAL_PROJECTS } from '../my-p
 export class ProjectsComponent implements OnInit {
   personal_projects = PERSONAL_PROJECTS;
   required_projects = REQUIRED_PROJECTS;
-  optional_projects = OPTIONAL_PROJECTS;
 
   constructor() { }
 
